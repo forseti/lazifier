@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1559/trunk/conf/tmpl/component/view
+END
+edit_ftl.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1559/trunk/conf/tmpl/component/view/edit_ftl.ftl
+END
+index_ftl.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1401/trunk/conf/tmpl/component/view/index_ftl.ftl
+END
+default_css.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1407/trunk/conf/tmpl/component/view/default_css.ftl
+END
+add_ftl.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1559/trunk/conf/tmpl/component/view/add_ftl.ftl
+END
+list_ftl.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1545/trunk/conf/tmpl/component/view/list_ftl.ftl
+END
+default_js.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1557/trunk/conf/tmpl/component/view/default_js.ftl
+END
+show_ftl.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1559/trunk/conf/tmpl/component/view/show_ftl.ftl
+END
+public_css.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1543/trunk/conf/tmpl/component/view/public_css.ftl
+END

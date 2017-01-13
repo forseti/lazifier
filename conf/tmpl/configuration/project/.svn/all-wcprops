@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1544/trunk/conf/tmpl/configuration/project
+END
+pom_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1544/trunk/conf/tmpl/configuration/project/pom_xml.ftl
+END
+lazifier_properties.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1402/trunk/conf/tmpl/configuration/project/lazifier_properties.ftl
+END
+profiles_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1487/trunk/conf/tmpl/configuration/project/profiles_xml.ftl
+END

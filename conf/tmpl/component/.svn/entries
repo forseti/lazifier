@@ -1,0 +1,55 @@
+10
+
+dir
+1569
+http://lazifier.googlecode.com/svn/trunk/conf/tmpl/component
+http://lazifier.googlecode.com/svn
+
+
+
+2010-04-18T09:14:21.704890Z
+1559
+slickwolf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bf3f520c-17b5-11de-82b5-194b17410922
+
+controller
+dir
+
+editor
+dir
+
+view
+dir
+
+base
+dir
+
+entity
+dir
+
+test
+dir
+
+repository
+dir
+
+service
+dir
+
+decorator
+dir
+

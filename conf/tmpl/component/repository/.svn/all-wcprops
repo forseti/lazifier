@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1523/trunk/conf/tmpl/component/repository
+END
+Repository_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1523/trunk/conf/tmpl/component/repository/Repository_java.ftl
+END
+RepositoryImpl_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1523/trunk/conf/tmpl/component/repository/RepositoryImpl_java.ftl
+END

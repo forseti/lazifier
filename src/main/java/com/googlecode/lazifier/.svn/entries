@@ -1,0 +1,80 @@
+10
+
+dir
+1569
+http://lazifier.googlecode.com/svn/trunk/src/main/java/com/googlecode/lazifier
+http://lazifier.googlecode.com/svn
+
+
+
+2010-04-19T17:15:13.750299Z
+1569
+slickwolf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bf3f520c-17b5-11de-82b5-194b17410922
+
+command
+dir
+
+scaffold
+dir
+
+create
+dir
+
+Main.java
+file
+
+
+
+
+2016-02-25T20:18:52.883156Z
+e7b4f5f3d3beb70febcc29bb8f9ba6b4
+2010-04-18T17:20:24.426239Z
+1566
+slickwolf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1530
+
+project
+dir
+
+help
+dir
+
+generate
+dir
+

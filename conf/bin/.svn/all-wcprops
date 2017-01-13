@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/1504/trunk/conf/bin
+END
+lazy
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/1504/trunk/conf/bin/lazy
+END
+initialize
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1504/trunk/conf/bin/initialize
+END
+lazy.bat
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/1504/trunk/conf/bin/lazy.bat
+END
+initialize.bat
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1487/trunk/conf/bin/initialize.bat
+END

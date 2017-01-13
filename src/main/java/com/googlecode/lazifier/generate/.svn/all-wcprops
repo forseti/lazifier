@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1569/trunk/src/main/java/com/googlecode/lazifier/generate
+END
+Generator.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1566/trunk/src/main/java/com/googlecode/lazifier/generate/Generator.java
+END
+GenerateCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1566/trunk/src/main/java/com/googlecode/lazifier/generate/GenerateCommand.java
+END
+AbstractGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1568/trunk/src/main/java/com/googlecode/lazifier/generate/AbstractGenerator.java
+END
+PatternConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1566/trunk/src/main/java/com/googlecode/lazifier/generate/PatternConstants.java
+END
+Source.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1569/trunk/src/main/java/com/googlecode/lazifier/generate/Source.java
+END

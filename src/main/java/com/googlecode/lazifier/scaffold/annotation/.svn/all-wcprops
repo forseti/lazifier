@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/1567/trunk/src/main/java/com/googlecode/lazifier/scaffold/annotation
+END
+PersistenceUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1567/trunk/src/main/java/com/googlecode/lazifier/scaffold/annotation/PersistenceUtils.java
+END
+ValidationConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1565/trunk/src/main/java/com/googlecode/lazifier/scaffold/annotation/ValidationConstants.java
+END
+AnnotationUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1565/trunk/src/main/java/com/googlecode/lazifier/scaffold/annotation/AnnotationUtils.java
+END
+PersistenceConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1565/trunk/src/main/java/com/googlecode/lazifier/scaffold/annotation/PersistenceConstants.java
+END

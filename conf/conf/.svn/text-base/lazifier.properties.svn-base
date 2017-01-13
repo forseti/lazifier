@@ -1,0 +1,399 @@
+########################################
+# Configurations for Configure Command #
+########################################
+project.application=baseController_java,baseRepository_java,baseRepositoryImpl_java,\
+				  	baseTest_java,architectureAspect_java,loggingAspect_java,\
+				  	applicationContext_xml,persistenceContext_xml,securityContext_xml,webContext_xml,\
+				  	application_properties,hibernate_cfg_xml,hibernate_properties,ehcache_xml,log4j_xml,\
+				  	freemarker_properties,messages_properties,errors_properties,exceptions_properties,\
+				  	web_xml,sitemesh_xml,decorators_xml,urlrewrite_xml,default_ftl,index_ftl,public_css,\
+				  	pom_xml,profiles_xml,lazifier_properties
+###################
+# Base Components #
+###################
+# Base Controller
+baseController_java.name=BaseController
+baseController_java.packagePattern=#package#.shared.component
+baseController_java.fileExtension=java
+baseController_java.targetDir=src/main/java
+baseController_java.templateFile=/component/base/Controller_java.ftl
+# Base Repository (interface)
+baseRepository_java.name=BaseRepository
+baseRepository_java.packagePattern=#package#.shared.component
+baseRepository_java.fileExtension=java
+baseRepository_java.targetDir=src/main/java
+baseRepository_java.templateFile=/component/base/Repository_java.ftl
+# Base Repository (implementation)
+baseRepositoryImpl_java.name=BaseRepositoryImpl
+baseRepositoryImpl_java.packagePattern=#package#.shared.component
+baseRepositoryImpl_java.fileExtension=java
+baseRepositoryImpl_java.targetDir=src/main/java
+baseRepositoryImpl_java.templateFile=/component/base/RepositoryImpl_java.ftl
+# Base Test (integration testing)
+baseTest_java.name=BaseTest
+baseTest_java.packagePattern=#package#.shared.test
+baseTest_java.fileExtension=java
+baseTest_java.targetDir=src/test/java
+baseTest_java.templateFile=/component/base/Test_java.ftl
+###################
+# Aspects Sources #
+###################
+# Architecture
+architectureAspect_java.name=ArchitectureAspect
+architectureAspect_java.packagePattern=#package#.shared.aspect
+architectureAspect_java.fileExtension=java
+architectureAspect_java.targetDir=src/main/java
+architectureAspect_java.templateFile=/aspect/application/ArchitectureAspect_java.ftl
+# Logging
+loggingAspect_java.name=LoggingAspect
+loggingAspect_java.packagePattern=#package#.shared.aspect
+loggingAspect_java.fileExtension=java
+loggingAspect_java.targetDir=src/main/java
+loggingAspect_java.templateFile=/aspect/audit/LoggingAspect_java.ftl
+###################
+# Spring Contexts #
+###################
+# Spring application context
+applicationContext_xml.name=applicationContext
+applicationContext_xml.fileExtension=xml
+applicationContext_xml.capitalizeFileName=false
+applicationContext_xml.targetDir=src/main/resources
+applicationContext_xml.templateFile=/configuration/context/applicationContext_xml.ftl
+# Spring persistence context
+persistenceContext_xml.name=persistenceContext
+persistenceContext_xml.fileExtension=xml
+persistenceContext_xml.capitalizeFileName=false
+persistenceContext_xml.targetDir=src/main/resources
+persistenceContext_xml.templateFile=/configuration/context/persistenceContext_xml.ftl
+# Spring security context
+securityContext_xml.name=securityContext
+securityContext_xml.fileExtension=xml
+securityContext_xml.capitalizeFileName=false
+securityContext_xml.targetDir=src/main/resources
+securityContext_xml.templateFile=/configuration/context/securityContext_xml.ftl
+# Spring web context
+webContext_xml.name=webContext
+webContext_xml.fileExtension=xml
+webContext_xml.capitalizeFileName=false
+webContext_xml.targetDir=src/main/resources
+webContext_xml.templateFile=/configuration/context/webContext_xml.ftl
+#############
+# Resources #
+#############
+# Spring Application properties
+application_properties.name=application
+application_properties.fileExtension=properties
+application_properties.capitalizeFileName=false
+application_properties.targetDir=src/main/resources
+application_properties.templateFile=/configuration/resource/application_properties.ftl
+# Hibernate configuration
+hibernate_cfg_xml.name=hibernate
+hibernate_cfg_xml.fileExtension=cfg.xml
+hibernate_cfg_xml.capitalizeFileName=false
+hibernate_cfg_xml.targetDir=src/main/resources
+hibernate_cfg_xml.templateFile=/configuration/resource/hibernate_cfg_xml.ftl
+# Hibernate properties
+hibernate_properties.name=hibernate
+hibernate_properties.fileExtension=properties
+hibernate_properties.capitalizeFileName=false
+hibernate_properties.targetDir=src/main/resources
+hibernate_properties.templateFile=/configuration/resource/hibernate_properties.ftl
+# EhCache configuration
+ehcache_xml.name=ehcache
+ehcache_xml.fileExtension=xml
+ehcache_xml.capitalizeFileName=false
+ehcache_xml.targetDir=src/main/resources
+ehcache_xml.templateFile=/configuration/resource/ehcache_xml.ftl
+# Freemarker properties
+freemarker_properties.name=freemarker
+freemarker_properties.fileExtension=properties
+freemarker_properties.capitalizeFileName=false
+freemarker_properties.targetDir=src/main/resources
+freemarker_properties.templateFile=/configuration/resource/freemarker_properties.ftl
+# i18n messages properties
+messages_properties.name=messages
+messages_properties.fileExtension=properties
+messages_properties.capitalizeFileName=false
+messages_properties.targetDir=src/main/resources
+messages_properties.templateFile=/configuration/resource/messages_properties.ftl
+# i18n errors properties
+errors_properties.name=errors
+errors_properties.fileExtension=properties
+errors_properties.capitalizeFileName=false
+errors_properties.targetDir=src/main/resources
+errors_properties.templateFile=/configuration/resource/errors_properties.ftl
+# Spring MVC exceptions properties
+exceptions_properties.name=exceptions
+exceptions_properties.fileExtension=properties
+exceptions_properties.capitalizeFileName=false
+exceptions_properties.targetDir=src/main/resources
+exceptions_properties.templateFile=/configuration/resource/exceptions_properties.ftl
+# Log4j configuration
+log4j_xml.name=log4j
+log4j_xml.fileExtension=xml
+log4j_xml.capitalizeFileName=false
+log4j_xml.targetDir=src/main/resources
+log4j_xml.templateFile=/configuration/resource/log4j_xml.ftl
+######################
+# Web Configurations #
+######################
+# Web application
+web_xml.name=web
+web_xml.fileExtension=xml
+web_xml.capitalizeFileName=false
+web_xml.targetDir=src/main/webapp/WEB-INF
+web_xml.templateFile=/configuration/web/web_xml.ftl
+# Sitemesh decorators
+sitemesh_xml.name=sitemesh
+sitemesh_xml.fileExtension=xml
+sitemesh_xml.capitalizeFileName=false
+sitemesh_xml.targetDir=src/main/webapp/WEB-INF
+sitemesh_xml.templateFile=/configuration/web/sitemesh_xml.ftl
+# Sitemesh decorators
+decorators_xml.name=decorators
+decorators_xml.fileExtension=xml
+decorators_xml.capitalizeFileName=false
+decorators_xml.targetDir=src/main/webapp/WEB-INF
+decorators_xml.templateFile=/configuration/web/decorators_xml.ftl
+# URL rewriter
+urlrewrite_xml.name=urlrewrite
+urlrewrite_xml.fileExtension=xml
+urlrewrite_xml.capitalizeFileName=false
+urlrewrite_xml.targetDir=src/main/webapp/WEB-INF
+urlrewrite_xml.templateFile=/configuration/web/urlrewrite_xml.ftl
+#######################
+# Sitemesh Decorators #
+#######################
+# Freemarker default decorator
+default_ftl.name=default
+default_ftl.fileExtension=ftl
+default_ftl.capitalizeFileName=false
+default_ftl.targetDir=src/main/webapp/WEB-INF/decorators
+default_ftl.templateFile=/component/decorator/default_ftl.ftl
+#################
+# Default Views #
+#################
+# View (index)
+index_ftl.suffix=index
+index_ftl.tailPackageWithName=true
+index_ftl.packagePattern=#package#
+index_ftl.removeRootPackage=true
+index_ftl.fileExtension=ftl
+index_ftl.useSuffixAsFileName=true
+index_ftl.capitalizeFileName=false
+index_ftl.targetDir=src/main/webapp/WEB-INF/freemarker
+index_ftl.templateFile=/component/view/index_ftl.ftl
+index_ftl.create=false
+#################
+# CSS Templates #
+#################
+public_css.name=public
+public_css.fileExtension=css
+public_css.capitalizeFileName=false
+public_css.targetDir=src/main/webapp/styles/local
+public_css.templateFile=/component/view/public_css.ftl
+##########################
+# Project Configurations #
+##########################
+# Maven POM
+pom_xml.name=pom
+pom_xml.fileExtension=xml
+pom_xml.capitalizeFileName=false
+pom_xml.targetDir=.
+pom_xml.templateFile=/configuration/project/pom_xml.ftl
+# Maven Profiles
+profiles_xml.name=profiles
+profiles_xml.fileExtension=xml
+profiles_xml.capitalizeFileName=false
+profiles_xml.targetDir=.
+profiles_xml.templateFile=/configuration/project/profiles_xml.ftl
+# Project Properties
+lazifier_properties.name=lazifier
+lazifier_properties.fileExtension=properties
+lazifier_properties.capitalizeFileName=false
+lazifier_properties.targetDir=.lazifier
+lazifier_properties.templateFile=/configuration/project/lazifier_properties.ftl
+######################################
+# Configurations for Creator Command #
+######################################
+create.controller=controller_java
+create.entity=entity_java
+create.embeddable=embeddable_java
+create.mappedsuperclass=mappedsuperclass_java
+create.repository=repository_java,repositoryImpl_java,repositoryTest_java
+create.service=service_java,serviceImpl_java,serviceTest_java
+create.test=test_java
+##############
+# Components #
+##############
+# Controller
+controller_java.suffix=Controller
+controller_java.tailPackageWithName=true
+controller_java.packagePattern=#package#
+controller_java.fileExtension=java
+controller_java.targetDir=src/main/java
+controller_java.templateFile=/component/controller/Controller_java.ftl
+# Editor
+editor_java.suffix=Editor
+editor_java.tailPackageWithName=true
+editor_java.packagePattern=#package#.editor
+editor_java.fileExtension=java
+editor_java.targetDir=src/main/java
+editor_java.templateFile=/component/editor/Editor_java.ftl
+# Editor (Collection)
+collectionEditor_java.suffix=CollectionEditor
+collectionEditor_java.tailPackageWithName=true
+collectionEditor_java.packagePattern=#package#.editor
+collectionEditor_java.fileExtension=java
+collectionEditor_java.targetDir=src/main/java
+collectionEditor_java.templateFile=/component/editor/CollectionEditor_java.ftl
+# Entity
+entity_java.tailPackageWithName=true
+entity_java.packagePattern=#package#
+entity_java.fileExtension=java
+entity_java.targetDir=src/main/java
+entity_java.templateFile=/component/entity/Entity_java.ftl
+# Query (Hibernate queries)
+entity_hbm_xml.tailPackageWithName=true
+entity_hbm_xml.packagePattern=#package#
+entity_hbm_xml.fileExtension=hbm.xml
+entity_hbm_xml.targetDir=src/main/java
+entity_hbm_xml.templateFile=/component/entity/Entity_hbm_xml.ftl
+# Embeddable
+embeddable_java.packagePattern=#package#
+embeddable_java.tailPackageWithName=true
+embeddable_java.fileExtension=java
+embeddable_java.targetDir=src/main/java
+embeddable_java.templateFile=/component/entity/Embeddable_java.ftl
+# Mapped Superclass
+mappedsuperclass_java.packagePattern=#package#
+mappedsuperclass_java.tailPackageWithName=true
+mappedsuperclass_java.fileExtension=java
+mappedsuperclass_java.targetDir=src/main/java
+mappedsuperclass_java.templateFile=/component/entity/MappedSuperclass_java.ftl
+# Repository (interface)
+repository_java.suffix=Repository
+repository_java.tailPackageWithName=true
+repository_java.packagePattern=#package#
+repository_java.fileExtension=java
+repository_java.targetDir=src/main/java
+repository_java.templateFile=/component/repository/Repository_java.ftl
+# Repository (implementation)
+repositoryImpl_java.suffix=RepositoryImpl
+repositoryImpl_java.tailPackageWithName=true
+repositoryImpl_java.packagePattern=#package#
+repositoryImpl_java.fileExtension=java
+repositoryImpl_java.targetDir=src/main/java
+repositoryImpl_java.templateFile=/component/repository/RepositoryImpl_java.ftl
+# Repository (unit testing)
+repositoryTest_java.suffix=RepositoryTest
+repositoryTest_java.tailPackageWithName=true
+repositoryTest_java.packagePattern=#package#.test
+repositoryTest_java.fileExtension=java
+repositoryTest_java.targetDir=src/test/java
+repositoryTest_java.templateFile=/component/test/RepositoryTest_java.ftl
+# Service (interface)
+service_java.suffix=Service
+service_java.tailPackageWithName=true
+service_java.packagePattern=#package#
+service_java.fileExtension=java
+service_java.targetDir=src/main/java
+service_java.templateFile=/component/service/Service_java.ftl
+# Service (implementation)
+serviceImpl_java.suffix=ServiceImpl
+serviceImpl_java.tailPackageWithName=true
+serviceImpl_java.packagePattern=#package#
+serviceImpl_java.fileExtension=java
+serviceImpl_java.targetDir=src/main/java
+serviceImpl_java.templateFile=/component/service/ServiceImpl_java.ftl
+# Service (test unit)
+serviceTest_java.suffix=ServiceTest
+serviceTest_java.tailPackageWithName=true
+serviceTest_java.packagePattern=#package#.test
+serviceTest_java.fileExtension=java
+serviceTest_java.targetDir=src/test/java
+serviceTest_java.templateFile=/component/test/ServiceTest_java.ftl
+# Test (integration test)
+test_java.suffix=Test
+test_java.tailPackageWithName=true
+test_java.packagePattern=#package#.test
+test_java.fileExtension=java
+test_java.targetDir=src/test/java
+test_java.templateFile=/component/test/Test_java.ftl
+# View (add)
+add_ftl.suffix=add
+add_ftl.tailPackageWithName=true
+add_ftl.packagePattern=#package#
+add_ftl.removeRootPackage=true
+add_ftl.fileExtension=ftl
+add_ftl.useSuffixAsFileName=true
+add_ftl.capitalizeFileName=false
+add_ftl.targetDir=src/main/webapp/WEB-INF/freemarker
+add_ftl.templateFile=/component/view/add_ftl.ftl
+# View (edit)
+edit_ftl.suffix=edit
+edit_ftl.tailPackageWithName=true
+edit_ftl.packagePattern=#package#
+edit_ftl.removeRootPackage=true
+edit_ftl.fileExtension=ftl
+edit_ftl.useSuffixAsFileName=true
+edit_ftl.capitalizeFileName=false
+edit_ftl.targetDir=src/main/webapp/WEB-INF/freemarker
+edit_ftl.templateFile=/component/view/edit_ftl.ftl
+# View (list)
+list_ftl.suffix=list
+list_ftl.tailPackageWithName=true
+list_ftl.packagePattern=#package#
+list_ftl.removeRootPackage=true
+list_ftl.fileExtension=ftl
+list_ftl.useSuffixAsFileName=true
+list_ftl.capitalizeFileName=false
+list_ftl.targetDir=src/main/webapp/WEB-INF/freemarker
+list_ftl.templateFile=/component/view/list_ftl.ftl
+# View (show)
+show_ftl.suffix=show
+show_ftl.tailPackageWithName=true
+show_ftl.packagePattern=#package#
+show_ftl.removeRootPackage=true
+show_ftl.fileExtension=ftl
+show_ftl.useSuffixAsFileName=true
+show_ftl.capitalizeFileName=false
+show_ftl.targetDir=src/main/webapp/WEB-INF/freemarker
+show_ftl.templateFile=/component/view/show_ftl.ftl
+# Default Stylesheet (JavaScript)
+default_css.suffix=default
+default_css.tailPackageWithName=true
+default_css.packagePattern=#package#
+default_css.removeRootPackage=true
+default_css.fileExtension=css
+default_css.useSuffixAsFileName=true
+default_css.capitalizeFileName=false
+default_css.targetDir=src/main/webapp/styles/local
+default_css.templateFile=/component/view/default_css.ftl
+# Default Client Side Script (JavaScript)
+default_js.suffix=default
+default_js.tailPackageWithName=true
+default_js.packagePattern=#package#
+default_js.removeRootPackage=true
+default_js.fileExtension=js
+default_js.useSuffixAsFileName=true
+default_js.capitalizeFileName=false
+default_js.targetDir=src/main/webapp/scripts/local
+default_js.templateFile=/component/view/default_js.ftl
+#################################
+# Configurations for Scaffolder #
+#################################
+scaffold.full=full_scaffolding
+full_scaffolding.form=simple
+full_scaffolding.script=jquery
+full_scaffolding.entity=entity_java
+full_scaffolding.referenceEditor=editor_java
+full_scaffolding.referenceCollectionEditor=collectionEditor_java
+full_scaffolding.referenceRepository=repository_java
+full_scaffolding.referenceService=service_java
+full_scaffolding.bases=baseController_java,baseRepository_java,baseRepositoryImpl_java,\
+					   baseTest_java,index_ftl
+full_scaffolding.sources=entity_hbm_xml,repository_java,repositoryImpl_java,repositoryTest_java,\
+						 service_java,serviceImpl_java,serviceTest_java,\
+						 controller_java,editor_java,collectionEditor_java,test_java,\
+						 add_ftl,edit_ftl,list_ftl,show_ftl,default_css,default_js

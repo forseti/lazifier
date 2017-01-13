@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1566/trunk/src/main/java/com/googlecode/lazifier/command
+END
+Options.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1566/trunk/src/main/java/com/googlecode/lazifier/command/Options.java
+END
+GenericCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1566/trunk/src/main/java/com/googlecode/lazifier/command/GenericCommand.java
+END
+Command.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1566/trunk/src/main/java/com/googlecode/lazifier/command/Command.java
+END
+AbstractCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1566/trunk/src/main/java/com/googlecode/lazifier/command/AbstractCommand.java
+END
+CommandLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1566/trunk/src/main/java/com/googlecode/lazifier/command/CommandLoader.java
+END

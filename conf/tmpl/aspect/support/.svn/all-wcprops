@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1400/trunk/conf/tmpl/aspect/support
+END
+ValidationAspect_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1400/trunk/conf/tmpl/aspect/support/ValidationAspect_java.ftl
+END

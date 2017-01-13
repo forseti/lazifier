@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1488/trunk/conf/tmpl/configuration/web
+END
+web_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1402/trunk/conf/tmpl/configuration/web/web_xml.ftl
+END
+sitemesh_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1402/trunk/conf/tmpl/configuration/web/sitemesh_xml.ftl
+END
+urlrewrite_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1488/trunk/conf/tmpl/configuration/web/urlrewrite_xml.ftl
+END
+decorators_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1402/trunk/conf/tmpl/configuration/web/decorators_xml.ftl
+END

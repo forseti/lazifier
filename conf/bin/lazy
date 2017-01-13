@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -z "$LAZIFIER_HOME" ]; then
+    echo "Please set LAZIFIER_HOME environment variable ^^"
+else
+	JAVA_EXT_DIRS=$LAZIFIER_HOME/lib
+	java -Djava.ext.dirs=$JAVA_EXT_DIRS -cp $LAZIFIER_HOME/conf -Dcontext.location=lazifierContext.xml com.googlecode.lazifier.Main $*
+fi

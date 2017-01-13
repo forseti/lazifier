@@ -1,0 +1,40 @@
+10
+
+dir
+1569
+http://lazifier.googlecode.com/svn/trunk/conf/tmpl/aspect
+http://lazifier.googlecode.com/svn
+
+
+
+2010-03-27T20:09:52.232603Z
+1527
+slickwolf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bf3f520c-17b5-11de-82b5-194b17410922
+
+support
+dir
+
+application
+dir
+
+persistence
+dir
+
+audit
+dir
+

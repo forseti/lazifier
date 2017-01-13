@@ -1,0 +1,36 @@
+[#macro url relativeUrl]
+[#t]
+[#assign localUrl="${relativeUrl}" /]
+[#if !localUrl?starts_with("/")][#assign localUrl]/${localUrl}[/#assign][/#if]
+[#noparse][@spring.url '' /][/#noparse]${localUrl}[#t]
+[/#macro]
+
+[#macro input path attributes=""]
+[#t]
+[#noparse][@spring.formInput '[/#noparse]${path}[#noparse]'[/#noparse][#if attributes?trim?length > 0], '${attributes}'[/#if][#noparse] /][/#noparse][#t]
+[/#macro]
+
+[#macro fileInput path attributes=""]
+[#t]
+[#noparse][@spring.formInput '[/#noparse]${path}'[#if attributes?trim?length > 0], '${attributes}'[#else], ''[/#if][#noparse], 'file' /][/#noparse][#t]
+[/#macro]
+
+[#macro hiddenInput path]
+[#t]
+[#noparse][@spring.formHiddenInput '[/#noparse]${path}[#noparse]' /][/#noparse][#t]
+[/#macro]
+
+[#macro passwordInput path]
+[#t]
+[#noparse][@spring.formPasswordInput '[/#noparse]${path}[#noparse]' fieldType='password' /][/#noparse][#t]
+[/#macro]
+
+[#macro label for code]
+[#t]
+[#noparse]<label for="[/#noparse]${for}[#noparse]">[@spring.messageText '[/#noparse]${code}[#noparse]'[/#noparse], '${for}'[#noparse] /][/#noparse]</label>[#t]
+[/#macro]
+
+[#macro checkbox path]
+[#t]
+[#noparse][@spring.formCheckbox '[/#noparse]${path}[#noparse]' /][/#noparse][#t]
+[/#macro]

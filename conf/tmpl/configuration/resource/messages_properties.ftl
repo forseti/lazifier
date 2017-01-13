@@ -1,0 +1,1 @@
+application.dateFormat=MM/dd/yyyy

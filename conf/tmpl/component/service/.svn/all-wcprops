@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1539/trunk/conf/tmpl/component/service
+END
+Service_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1539/trunk/conf/tmpl/component/service/Service_java.ftl
+END
+ServiceImpl_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1539/trunk/conf/tmpl/component/service/ServiceImpl_java.ftl
+END

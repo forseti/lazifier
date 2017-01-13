@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1497/trunk/conf/tmpl/configuration/context
+END
+webContext_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1477/trunk/conf/tmpl/configuration/context/webContext_xml.ftl
+END
+applicationContext_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1448/trunk/conf/tmpl/configuration/context/applicationContext_xml.ftl
+END
+persistenceContext_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1446/trunk/conf/tmpl/configuration/context/persistenceContext_xml.ftl
+END
+securityContext_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1497/trunk/conf/tmpl/configuration/context/securityContext_xml.ftl
+END

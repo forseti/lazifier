@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="lazifier" basedir="." default="setup" xmlns:artifact="urn:maven-artifact-ant">
+	<property file="build.properties"/>
+    <path id="maven-ant-tasks.classpath" path="lib/maven-ant-tasks-2.0.9.jar"/>
+
+	<typedef resource="org/apache/maven/artifact/ant/antlib.xml"
+	         uri="urn:maven-artifact-ant"
+	         classpathref="maven-ant-tasks.classpath"/>
+
+	<artifact:pom id="maven.project" file="pom.xml"/>
+
+	<artifact:dependencies pathid="compile.classpath"
+						   filesetid="compile.fileset"
+						   usescope="compile">
+		<pom refid="maven.project"/>
+	</artifact:dependencies>
+	
+	<artifact:dependencies pathid="test.classpath"
+						   filesetid="test.fileset"
+						   usescope="test">
+		<pom refid="maven.project"/>
+	</artifact:dependencies>
+	
+	<target name="build" depends="init">
+		<copy todir="build/classes" overwrite="true">
+			<fileset dir="src/main/resources">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+		<javac destdir="build/classes" fork="true" verbose="true"
+			   memoryinitialsize="256m" memorymaximumsize="512m">
+			<src path="src/main/java"/>
+			<classpath>
+				<path refid="compile.classpath"/>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="init">
+		<tstamp/>
+		<mkdir dir="dist"/>
+	</target>
+	
+	<target name="setup" depends="init">
+		<exec dir="." executable="cmd.exe" osfamily="windows">
+			<arg line="/c mvn initialize"/>
+		</exec>
+		<exec dir="." executable="env" osfamily="unix">
+			<arg line="mvn initialize"/>
+		</exec>
+	</target>
+	
+	<target name="deploy" depends="init">
+		<exec dir="." executable="env" osfamily="unix">
+			<arg line="mvn deploy"/>
+		</exec>
+		<exec dir="." executable="cmd.exe" osfamily="windows">
+			<arg line="/c mvn deploy"/>
+		</exec>
+	</target>
+			
+	<target name="install" depends="init">
+		<exec dir="." executable="cmd.exe" osfamily="windows">
+			<arg line="/c mvn install"/>
+		</exec>
+		<exec dir="." executable="env" osfamily="unix">
+			<arg line="mvn install"/>
+		</exec>
+	</target>
+	
+	<target name="clean">
+		<delete dir="build" includeemptydirs="true">
+			<include name="**/*"/>
+		</delete>
+		<delete dir="dist" includeemptydirs="true">
+			<include name="**/*"/>
+		</delete>
+	</target>
+	
+
+	<target name="dist" depends="build">
+		<mkdir dir="dist/lazifier"/>
+		<copy todir="dist/lazifier">
+			<fileset dir="conf">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+		
+		<mkdir dir="dist/lazifier/lib"/>
+		
+		<jar basedir="build/classes" includes="**/*" 
+			 destfile="dist/lazifier/lib/lazifier.jar">
+		</jar>
+		
+		<copy todir="dist/lazifier/lib">
+			<fileset refid="compile.fileset"/>
+			<mapper type="flatten"/>
+		</copy>
+
+		<delete dir="dist/lazifier/lib">
+			<include name="**/*ant*.jar"/>
+			<include name="**/*maven*.jar"/>
+			<include name="**/*groovy*.jar"/>
+		</delete>
+		<delete file="dist/lazifier.zip" quiet="true" />
+		<zip basedir="dist" destfile="dist/lazifier.zip" excludes=".*/**/*" compress="true" />
+	</target>
+</project>

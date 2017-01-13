@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1447/trunk/conf/tmpl/component/test
+END
+Test_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1447/trunk/conf/tmpl/component/test/Test_java.ftl
+END
+RepositoryTest_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1401/trunk/conf/tmpl/component/test/RepositoryTest_java.ftl
+END
+ServiceTest_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1401/trunk/conf/tmpl/component/test/ServiceTest_java.ftl
+END
+FacadeTest_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1401/trunk/conf/tmpl/component/test/FacadeTest_java.ftl
+END

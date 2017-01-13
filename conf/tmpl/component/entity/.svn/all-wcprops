@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1559/trunk/conf/tmpl/component/entity
+END
+Entity_hbm_xml.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1559/trunk/conf/tmpl/component/entity/Entity_hbm_xml.ftl
+END
+Embeddable_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1416/trunk/conf/tmpl/component/entity/Embeddable_java.ftl
+END
+MappedSuperclass_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1416/trunk/conf/tmpl/component/entity/MappedSuperclass_java.ftl
+END
+Entity_java.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1401/trunk/conf/tmpl/component/entity/Entity_java.ftl
+END

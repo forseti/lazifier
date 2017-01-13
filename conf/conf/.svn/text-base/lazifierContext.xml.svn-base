@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="true">
+		<property name="searchSystemEnvironment" value="true" />
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_FALLBACK" />
+	</bean>
+
+	<bean id="mainProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean" lazy-init="true">
+		<property name="locations">
+			<list>
+				<value>classpath:lazifier.properties</value>
+			</list>		
+		</property>
+	</bean>
+
+	<bean id="configuration" class="org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean" lazy-init="true">
+		<property name="templateLoaderPaths">
+			<list>
+				<value>file:${LAZIFIER_HOME}/tmpl/</value>
+				<value>file:./.lazifier/template/</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="help" class="com.googlecode.lazifier.help.HelpCommand" lazy-init="true">
+		<property name="commands">
+			<map>
+				<entry key="project" value="Create a project"/>
+				<entry key="create" value="Create a component"/>
+				<entry key="scaffold" value="Create CRUD components"/>
+				<entry key="help" value="Print this message"/>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="project" class="com.googlecode.lazifier.project.ProjectCommand" lazy-init="true">
+		<property name="generator">
+			<bean class="com.googlecode.lazifier.project.Projector" lazy-init="true">
+				<property name="configuration" ref="configuration" />
+				<property name="properties" ref="mainProperties" />
+			</bean>
+		</property>
+		<property name="defaultType" value="application" />
+		<property name="defaultDatabase" value="h2" />
+		<property name="types">
+			<map>
+				<entry key="application" value="Application Project"/>
+			</map>
+		</property>
+		<property name="databases">
+			<map>
+				<entry key="h2" value="H2 Database"/>
+				<entry key="hsql" value="HSQL Database"/>
+				<entry key="postgresql" value="PostgreSQL Database"/>
+			</map>		
+		</property>
+	</bean>
+
+	<bean id="projectProperties" parent="mainProperties" lazy-init="true">
+		<property name="locations">
+			<list merge="true">
+			 	<value>file:./.lazifier/lazifier.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="create" class="com.googlecode.lazifier.create.CreateCommand" lazy-init="true">
+		<property name="generator">
+			<bean class="com.googlecode.lazifier.create.Creator" lazy-init="true">
+				<property name="configuration" ref="configuration" />
+				<property name="properties" ref="projectProperties" />
+			</bean>
+		</property>
+		<property name="defaultType" value="entity" />
+		<property name="types">
+			<map>
+				<entry key="controller" value="Spring Controller"/>
+				<entry key="entity" value="Hibernate Entity"/>
+				<entry key="embeddable" value="Hibernate Embeddable"/>
+				<entry key="mappedsuperclass" value="Hibernate Mapped Superclass"/>
+				<entry key="repository" value="Spring Repository"/>
+				<entry key="service" value="Spring Service"/>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="scaffold" class="com.googlecode.lazifier.scaffold.ScaffoldCommand" lazy-init="true">
+		<property name="generator">
+			<bean class="com.googlecode.lazifier.scaffold.Scaffolder" lazy-init="true">
+				<property name="forms">
+					<map key-type="java.lang.String" value-type="java.lang.Class">
+						<entry key="simple" value="com.googlecode.lazifier.scaffold.form.SimpleForm" />
+					</map>
+				</property>
+				<property name="constraints">
+					<map key-type="java.lang.String" value-type="java.lang.Class">
+						<entry key="jquery" value="com.googlecode.lazifier.scaffold.script.JQueryConstraint" />	
+					</map>
+				</property>
+				<property name="configuration" ref="configuration" />
+				<property name="properties" ref="projectProperties" />
+			</bean>
+		</property>
+		<property name="defaultType" value="full" />
+		<property name="types">
+			<map>
+				<entry key="full" value="Create all CRUD components"/>
+			</map>
+		</property>
+	</bean>
+</beans>

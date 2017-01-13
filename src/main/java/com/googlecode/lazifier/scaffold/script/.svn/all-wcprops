@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1565/trunk/src/main/java/com/googlecode/lazifier/scaffold/script
+END
+ConstraintValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1565/trunk/src/main/java/com/googlecode/lazifier/scaffold/script/ConstraintValue.java
+END
+Include.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1565/trunk/src/main/java/com/googlecode/lazifier/scaffold/script/Include.java
+END
+Constraint.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1565/trunk/src/main/java/com/googlecode/lazifier/scaffold/script/Constraint.java
+END
+JQueryConstraint.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1565/trunk/src/main/java/com/googlecode/lazifier/scaffold/script/JQueryConstraint.java
+END
